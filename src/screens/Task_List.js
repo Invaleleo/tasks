@@ -1,5 +1,5 @@
 import React, {Component} from "react" //import dos componentes
-import {StylesSheet, View, Text, ImageBacjgound} from "react-native" //import do css, view e text
+import {StylesSheet, View, Text, ImageBackgound} from "react-native" //import do css, view e text
 
 import moment from "moment" // biblioteca para trabalhar com datase horas
 import 'moment/locate/pt-br'

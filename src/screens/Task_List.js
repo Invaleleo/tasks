@@ -1,10 +1,11 @@
 import React, { Component } from "react" // Importa React e o componente base (Component) para criar componentes de classe
-import { StyleSheet, View, Text, ImageBackground, FlatList } from "react-native" // Importa componentes do React Native para a interface do usuário
+import { StyleSheet, View, Text, ImageBackground, FlatList, TouchableOpacity, Platform} from "react-native" // Importa componentes do React Native para a interface do usuário
 
 import Icon from "react-native-vector-icons/FontAwesome6" // Importa um ícone específico da biblioteca FontAwesome6
 
 import moment from "moment" // Importa a biblioteca moment para manipulação de datas
 import 'moment/locale/pt-br' // Define o locale do moment para o português do Brasil
+import Add_Tarefa from "./Add_Tarefa"
 
 //referenciar a imagemm
 //../ sai da pasta
@@ -88,6 +89,7 @@ export default class Task_List extends Component { // tem todas as característi
         // formato padrão da data (ddd) dia da semana (D) dia do mês (MMMM) nome do mês
         return (
             <View style={styles.container}>
+                <Add_Tarefa/>{/*          */}
 
                 <ImageBackground source={today_Image} style={styles.background}> {/* Exibe a imagem de fundo */}
                     <View style={styles.iconBar}> 
